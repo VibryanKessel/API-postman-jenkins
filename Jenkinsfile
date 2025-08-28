@@ -5,8 +5,8 @@ pipeline {
 		args '--entrypoint='
 	       }
     }
-    environment {
-        COLLECTIONS_PATH = 'collections/'
+    triggers {
+        upstream 'build-and-deploy-to-integration'
     }
     stages {
         stage('Install dependencies') {
