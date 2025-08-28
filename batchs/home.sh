@@ -1,0 +1,1 @@
+newman run collections/get_welcome_collection.json --reporters cli,junit --reporter-junit-export results/newman-report.xml
