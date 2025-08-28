@@ -6,7 +6,7 @@ pipeline {
 	       }
     }
     triggers {
-        upstream 'build-and-deploy-to-integration'
+        upstream 'cypress-jenkins'
     }
     stages {
         stage('Install dependencies') {
