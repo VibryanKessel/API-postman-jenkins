@@ -6,7 +6,7 @@ pipeline {
 	       }
     }
     triggers {
-        upstream 'cypress-jenkins'
+        upstream 'Selenium-CICD'
     }
     stages {
         stage('Install dependencies') {
